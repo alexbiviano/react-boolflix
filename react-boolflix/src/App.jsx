@@ -2,6 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import ReactCountryFlag from 'react-country-flag'
 
+
 const languageToCountryCode = {  
   en: 'GB',  
   'en-US': 'US',  
@@ -11,7 +12,7 @@ const languageToCountryCode = {
   de: 'DE',  
 };  
 
-const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w342'; 
+const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w342';  
 
 function App() {  
   const [query, setQuery] = useState('');  
@@ -40,6 +41,10 @@ function App() {
     } catch (error) {  
       console.error('Errore durante la ricerca:', error);  
     }  
+  };  
+
+   const getStarRating = (vote) => {  
+    return Math.ceil(vote / 2);
   };  
 
   return (  
@@ -101,7 +106,5 @@ function App() {
     </div>  
   );  
 }  
-
-
 
 export default App;  
