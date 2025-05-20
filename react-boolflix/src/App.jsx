@@ -42,7 +42,7 @@ function App() {
 
   return (  
     <div className="container">  
-      <h1 className="my-4">Cerca Film e Serie TV</h1>  
+      <h1 className="my-4">Cerca Film e Serie TV</h1>   
       <div className="input-group mb-3">  
         <input   
           type="text"   
