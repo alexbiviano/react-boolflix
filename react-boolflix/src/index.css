@@ -23,7 +23,29 @@ body {
 }  
 
 
+.search-bar {  
+  display: flex; 
+  align-items: center; 
+}  
 
+.search-bar button {  
+  background-color: #E50914;  
+  border: none; 
+  color: white;
+  padding: 10px 15px; 
+  border-radius: 4px;  
+  cursor: pointer; 
+  margin-right: 10px; 
+}  
+
+.search-bar input {  
+  background-color: #333; 
+  border: 1px solid #555;  
+  border-radius: 4px;   
+  padding: 10px; 
+  color: #fff;   
+  width: 300px;   
+}  
 
 .search-bar button:hover {  
   background-color: #f40612;  
