@@ -1,35 +1,96 @@
-.container {  
-  padding-top: 20px;  
+body {  
+  background-color: #141414; /* Colore di sfondo simile a Netflix */  
+  color: #fff; /* Colore del testo */  
+  font-family: 'Arial', sans-serif; /* Font generico */  
+  margin: 0;  
+  padding: 0;  
 }  
 
 .header {  
   display: flex;  
   justify-content: space-between;  
   align-items: center;  
-  margin-bottom: 20px;  
+  padding: 20px 40px; /* Padding per l'header */  
+  background-color: rgba(0, 0, 0, 0.5); /* Leggero sfondo scuro per l'header */  
+  position: fixed;  
+  width: 100%; /* Larghezza a tutto schermo per l'header */  
+  z-index: 1000; /* Assicurati che si sovrapponga agli altri elementi */  
+}  
+
+.logo h1 {  
+  margin: 0;  
+  font-size: 24px; /* Dimensione del logo */  
+  color: #E50914; /* Colore rosso Netflix per il logo */  
 }  
 
 .search-bar {  
   display: flex;  
+  align-items: center;  
+  margin-left: auto; 
+  z-index: 1000; 
 }  
 
 .search-bar input {  
-  margin-right: 10px;  
+  background-color: #333;  
+  border: 1px solid #555;  
+  border-radius: 4px;  
+  padding: 10px;  
+  color: #fff;  
+  width: 300px; /* Rende l'input largo, puoi modificarlo */  
+}  
+
+.search-bar button {  
+  background-color: #E50914; /* Colore pulsante */  
+  border: none; /* Rimuovi il bordo */  
+  color: white; /* Colore del testo del pulsante */  
+  padding: 10px 15px; /* Dimensioni sufficienti per il pulsante */  
+  border-radius: 4px;  
+  cursor: pointer; /* Cambia il cursore su hover */  
+  font-size: 16px; /* Dimensione del font */  
+  transition: background-color 0.3s ease; /* Transizione per il hover */  
+}  
+
+.search-bar button:hover {  
+  background-color: #f40612; /* Colore scuro quando il pulsante è sovrapposto */  
+}  
+
+.row {  
+  margin-top: 80px; /* Margine per evitare che i card vengano coperti dall'header */  
 }  
 
 .movie-card {  
   position: relative;  
   overflow: hidden;  
+  border: none; /* Rimuovi il bordo della card */  
+  border-radius: 10px; /* Arrotondamento degli angoli */  
 }  
 
 .movie-card img {  
   width: 100%;  
   height: auto;  
   transition: transform 0.3s ease;  
+  border-radius: 10px; /* Arrotondamento degli angoli dell'immagine */  
 }  
 
 .movie-card:hover img {  
-  transform: scale(1.1);  
+  transform: scale(1.1); 
+}  
+
+.card-body {  
+  padding: 15px; 
+}  
+
+.card-title {  
+  font-size: 18px;
+  margin: 0; 
+}  
+
+.card-text {  
+  margin: 5px 0;  
+}  
+
+.star-rating {  
+  margin-top: 5px; 
 }  
 
 .card-overlay {  
@@ -38,20 +99,22 @@
   left: 0;  
   right: 0;  
   bottom: 0;  
-  background: rgba(0, 0, 0, 0.7);  
+  background: rgba(0, 0, 0, 0.9); 
   color: white;  
   display: flex;  
   align-items: center;  
   justify-content: center;  
-  opacity: 0;  
+  opacity: 0; 
   transition: opacity 0.3s ease;  
   padding: 10px;  
+  text-align: center; 
 }  
 
 .movie-card:hover .card-overlay {  
-  opacity: 1;  
+  opacity: 1; 
 }  
 
 .card-overview {  
-  text-align: center;  
+  font-size: 14px;  
+  line-height: 1.5; 
 }  
