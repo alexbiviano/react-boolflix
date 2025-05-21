@@ -12,7 +12,6 @@ body {
   align-items: center;  
   padding: 20px 40px; 
   background-color: rgba(0, 0, 0, 0.5); 
-  position: fixed;  
   width: 100%; 
   z-index: 1000;   
 }  
@@ -24,25 +23,8 @@ body {
 }  
 
 
-.search-bar input {  
-  background-color: #333;  
-  border: 1px solid #555;  
-  border-radius: 4px;  
-  padding: 10px;  
-  color: #fff;  
-  width: 300px; 
-  display: flex; 
-}
 
-.search-bar button {  
-  background-color: #E50914; 
-  border: none;  
-  border-radius: 4px;  
-  color: #fff;  
-  cursor: pointer;
-  margin-right: 10px;
-  display: flex;  
-}
+
 
 
 .search-bar button:hover {  
