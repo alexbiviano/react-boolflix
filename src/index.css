@@ -1,0 +1,97 @@
+body {  
+  background-color: #141414; 
+  color: #fff; 
+  font-family: 'Arial', sans-serif; 
+  margin: 0;  
+  padding: 0;  
+}  
+
+.header {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 20px 40px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 100%; 
+  z-index: 1000;   
+}  
+
+.logo h1 {  
+  margin: 0;  
+  font-size: 24px;  
+  color: #E50914; 
+}  
+
+
+
+
+
+
+.search-bar button:hover {  
+  background-color: #f40612;  
+}  
+
+.row {  
+  margin-top: 80px; 
+}  
+
+.movie-card {  
+  position: relative;  
+  overflow: hidden;  
+  border: none; 
+  border-radius: 10px;  
+}  
+
+.movie-card img {  
+  width: 100%;  
+  height: auto;  
+  transition: transform 0.3s ease;  
+  border-radius: 10px;  
+}  
+
+.movie-card:hover img {  
+  transform: scale(1.1); 
+}  
+
+.card-body {  
+  padding: 15px; 
+}  
+
+.card-title {  
+  font-size: 18px;
+  margin: 0; 
+}  
+
+.card-text {  
+  margin: 5px 0;  
+}  
+
+.star-rating {  
+  margin-top: 5px; 
+}  
+
+.card-overlay {  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  background: rgba(0, 0, 0, 0.9); 
+  color: white;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  opacity: 0; 
+  transition: opacity 0.3s ease;  
+  padding: 10px;  
+  text-align: center; 
+}  
+
+.movie-card:hover .card-overlay {  
+  opacity: 1; 
+}  
+
+.card-overview {  
+  font-size: 14px;  
+  line-height: 1.5; 
+}  
